@@ -2,7 +2,6 @@ class Api::BooksController < ApplicationController
 
   def index
     @books = Book.all
-    fail
     render :json => @books
   end
   
